@@ -1,0 +1,53 @@
+{
+    "1st_yr_1st_sem": [
+      "Introduction to Computing",
+      "Computer Programming 1",
+      "Purposive Communication",
+      "Readings in Philippine History",
+      "The Contemporary World",
+      "Mathematics in the Modern World",
+      "Movement Competency Training or MCT",
+      "NSTP CWTS I"
+    ],
+    "1st_yr_2nd_sem": [
+      "Computer Programming 2",
+      "Data Structures and Algorithms",
+      "Discrete Mathematics",
+      "Art Appreciation",
+      "Understanding the Self",
+      "Science, Technology and Society",
+      "Exercise-based Fitness Activities",
+      "NSTP CWTS II"
+    ],
+    "2nd_yr_1st_sem": [
+      "Intro to Human Computer Interaction",
+      "Fundamentals of Database Systems",
+      "Platform Technologies",
+      "Object Oriented Programming",
+      "Accounting Principles",
+      "Environmental Science",
+      "Physical Activity Towards Health and Fitness 3"
+    ],
+    "2nd_yr_2nd_sem": [
+      "Information Management",
+      "Networking 1",
+      "Web Systems and Technologies",
+      "Systems Integration and Architecture 1",
+      "Ethics",
+      "Life and Works of Rizal",
+      "Physical Activity Towards Health and Fitness 4"
+    ],
+    "3rd_yr_1st_sem": [
+      "Information Assurance and Security",
+      "Networking 2",
+      "Mobile Programming",
+      "Software Engineering",
+      "IT Elective 1",
+      "Technopreneurship"
+    ],
+    "3rd_yr_2nd_sem": [
+      "CAPSTONE Project and Research 1"
+    ]
+   
+  
+  }

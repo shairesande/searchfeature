@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaire Sande</title>
+</head>
+<body>
+
+    <h3>I am header with an unordered list of hyperlinks</h3>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+   <!--Search Bar-->
+   <div class="search-conatiner">
+    <input type="text" id="searchbar" placeholder="Search here...">
+    <button onclick="searchFunction()">Search</button>
+   </div>
+
+   <div id="results"></div>
+
+   <script scr="script.js"></script>
+
+    <div>
+        <img src=image/cute.png alt="image">
+        <p><h3>Hi,Im Shaire Sande</h3></p>
+    </div>
+
+    <div class="page-content">
+        
+<div class="card" id="about">
+<p class="card-header">About</p>
+<p class="card-body"><h6>Hello! Tell us about yourself.</h6></p>
+</div>
+<div class="card" id="education">
+<p class="card-header">Education</p>
+<p class="card-body"><h6>Tell us about your education</h6></p>
+</div>
+<div class="card" id="skills">
+<p class="card-header">Skills</p>
+<p class="card-body">Tell us about your IT Skills>
+</div>
+<div class="card" id="portfolio">
+<p class="card-header">Portfolio</p>
+<p class="card-body">Share your previous IT projects</p>
+</div>
+</div>
+
+     
+
+        <footer> <div class="card" id="courses">
+            <p class="card-header">Courses Taken</p>
+            <div class="card-body" id="courses-list">
+                <!-- Courses will be dynamically loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="box">
+        <p>shairesande@gmail.com</p>
+    </footer>
+
+    <script>
+        fetch('courses.json')
+            .then(response => response.json())
+            .then(data => {
+                const coursesList = document.getElementById('courses-list');
+                for (const [semester, courses] of Object.entries(data)) {
+                    const semesterHeader = document.createElement('h3');
+                    semesterHeader.textContent = semester.replace(/_/g, ' ');
+                    coursesList.appendChild(semesterHeader);
+
+                    const courseList = document.createElement('ul');
+                    courses.forEach(course => {
+                        const courseItem = document.createElement('li');
+                        courseItem.textContent = course;
+                        courseList.appendChild(courseItem);
+                    });
+                    coursesList.appendChild(courseList);
+                }
+            })
+            .catch(error => console.error('Error fetching courses:', error));
+    </script></footer>
+    </div>
+
+</body>
+</html>
